@@ -1,0 +1,96 @@
+.weather {
+    background: url('img/umbrella.png') no-repeat center top;
+    background-size: contain;
+    /* opacity: 0.4; */
+    height: 500px;
+    position: static;
+}
+
+.row {
+    position: relative;
+    top: -520px;
+    margin-left: 50px;
+    height: 330px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 42px;
+    margin: 20px 0 0 0;
+}
+
+.package-name {
+    color: blue;
+    font-size: 33px;
+}
+
+.windy span {
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.featuresWindy {
+    color: red;
+
+}
+
+.menu {
+    position: absolute;
+    z-index: 1000;
+    left: 85%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:hover {
+    display: block;
+    transition-duration: 0.2s;
+    font-size: 24px;
+    background: yellow;
+    height: 40px;
+    color: black;
+}
+
+li {
+    width: 150px;
+    list-style: none;
+    /* margin: 10px 0px; */
+    height: 40px;
+    border: 1px solid white;
+    background: blue;
+    text-align: center;
+    float: right;
+    color: white;
+}
+
+
+.menu ul ul {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    top: 10px;
+    left: 1px;
+    transition-duration: 0.4s;
+    transition-delay: 0.15s;
+
+}
+
+ul:hover li {
+    cursor: pointer;
+}
+
+.menu ul:hover ul {
+    opacity: 100;
+    visibility: visible;
+    cursor: pointer;
+}
